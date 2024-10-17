@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: news-admin-panel
+  main:
+    banner-mode: "off"
+  datasource:
+    url: jdbc:mysql://localhost:3306/news_app
+    username: root
+    password: dixlor12
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: WARN
+    org.springframework: WARN
+    com.ibrain.news.admin.panel: INFO
